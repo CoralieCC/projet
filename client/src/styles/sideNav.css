@@ -1,0 +1,116 @@
+.side-nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    margin-top: 6.5rem;
+    width: 25rem;
+    background-color: #fff;
+    /* border-right: 1px solid rgb(218, 220, 224); */
+    height: 100vh;
+    box-shadow: rgb(0 0 0 / 20%) 10px 10px 10px 0px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+}
+
+
+.search-result {
+    margin-left: 30rem;
+}
+
+input[type="text"] {
+    height: 5.6rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(222, 223, 224);
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+}
+input[type="text"]:focus-visible {
+    border: none;
+    border-radius: 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.87);
+    outline: none;
+}
+
+nav >  label {
+    display: inline-block;
+    margin: 1rem 0 1rem 0.6rem;
+}
+
+.strong {
+    font-weight: 700;
+}
+.type-search {
+    margin-bottom: 1rem;
+}
+.type-search > label:first-of-type {
+    margin-right: 1rem;
+}
+
+input[type='radio'] {
+    accent-color: black;
+}
+
+.fa-magnifying-glass{
+    display: none;
+}
+.fa-xmark {
+    display: none;
+}
+.side-nav.show {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 1051px) {
+    .side-nav {
+        margin-top: 0rem;
+        width: 23%;
+    }
+    .search-result{
+        margin: auto
+    }
+    .fa-xmark.show {
+        display: inline-block;
+        text-align: right;
+        font-size: 2rem;
+    }
+    /* .fa-magnifying-glass {
+        z-index:10
+    } */
+    /* .fa-magnifying-glass.show {
+        left: 23.2%
+    } */
+    .side-nav {
+        position: fixed;
+        top: 8.5vh;
+        left: 0;
+        height: 92vh;
+        width: 20%;
+        transform: translateX(-150%);
+        transition: transform 1s ease;
+    }
+    .fa-magnifying-glass{
+        display: inline-block;
+        position: fixed;
+        top:6.5rem;
+        left: 0;
+        color: white;
+        background-color: #000;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .side-nav {
+        margin-top: 1rem;
+        width:95%;
+    }
+    .fa-magnifying-glass{
+        top: 7.5rem;
+    }
+}
+

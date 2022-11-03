@@ -1,0 +1,84 @@
+.review {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.review-book {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-right: 4rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    border-right: 1px solid #cccccc;
+}
+
+
+.review-book:visited, .review-book {
+    color: #000;
+}
+.review-book h2 {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+.review-book img {
+    margin-top: 3rem;
+    height: 100px
+}
+
+.fa-star {
+    color: gold
+}
+
+.review-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.review-2 h2 {
+    text-align: center;
+}
+.review-3 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cccccc;
+}
+.review-essential {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.review-controls {
+    width: 7rem;
+}
+
+.fa-trash {
+    margin-right: 2rem;
+}
+
+.comment-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.black-comment {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-plus {
+    margin-right: 1rem;
+}
+
+.fa-book-open {
+    font-size: 5rem;
+}

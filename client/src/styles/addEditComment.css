@@ -1,0 +1,33 @@
+.add-comment form, .edit-comment form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+.add-comment textarea, .edit-comment textarea {
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(222, 223, 224);
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    height: 5rem;
+}
+
+.add-comment label, .edit-comment label {
+    margin-bottom: -1rem;
+    z-index: 100;
+    margin-left: 1rem;
+}
+
+.add-comment label span, .edit-comment label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    letter-spacing: 0.5;
+    background-color: #fff;
+    padding: 0 5px;
+}

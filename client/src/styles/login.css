@@ -1,0 +1,60 @@
+#root > main > div {
+    margin-top: 10rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.register {
+    width: 35rem;
+    margin: auto;
+    border: 0.1rem solid rgb(222, 223, 224);
+    border-radius: 0.4rem;
+    background-color: #fff;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+
+.register input {
+    height: 5.6rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(222, 223, 224);
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.register input:hover {
+    border: none;
+    border-radius: 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.87);
+}
+.register input:focus-visible {
+    border: none;
+    border-radius: 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.87);
+    outline: none;
+}
+
+.register label {
+    margin-bottom: -1rem;
+    z-index: 100;
+    margin-left: 1rem;
+}
+
+.register label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    letter-spacing: 0.5;
+    background-color: #fff;
+    padding: 0 5px;
+}

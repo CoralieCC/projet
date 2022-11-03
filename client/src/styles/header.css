@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 7.5rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px, rgb(0 0 0 / 20%) 0px 2px 4px -1px;
+    z-index: 200;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    height: 6.5rem
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem 2rem 1rem 5rem;
+}
+
+header a, header p {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1rem 2.4rem;
+    border-radius: 2rem;
+    color: rgb(32, 33, 36);
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.active {
+    background-color: #e1d9c8;
+}
+
+.burger {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav.show .line1 {
+    transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.nav.show .line2 {
+    opacity: 0;
+}
+.nav.show .line3 {
+    transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.nav.show .header-nav {
+    transform: translateX(0%);
+}
+
+.line {
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: #000;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+@media screen and (max-width: 1051px) {
+    .header.connected {
+        height: 5.5rem
+    }
+    .burger.show {
+        display: block;
+    }
+    .nav {
+        margin: 1rem 2rem
+    }
+    .header-nav {
+        position: fixed;
+        top: 8.5vh;
+        right: 0;
+        height: 92vh;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #fff;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-nav {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header.header div.nav {
+        flex-direction: row;
+    }
+    header.header div.nav.not-connected {
+        flex-direction: column;
+        margin: auto
+    }
+    .header {
+        height: 110px
+    }
+    .header.connected {
+        height: 7rem
+    }
+    .header-nav {
+        top: 11vh
+    }
+    .title {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header-nav {
+        width: 100%
+    }
+}

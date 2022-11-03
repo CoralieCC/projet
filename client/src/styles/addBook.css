@@ -1,0 +1,82 @@
+.container {
+    width: 45rem;
+    margin: auto;
+    border: 0.1rem solid rgb(222, 223, 224);
+    border-radius: 0.4rem;
+    background-color: #fff;
+    margin-bottom: 5rem
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+.container.edit {
+    border:0;
+    width:90%;
+    margin-right: 3rem;
+}
+.container input[type="text"], .container textarea {
+    height: 5.6rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(222, 223, 224);
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+}
+.container textarea {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    height: 10rem;
+}
+
+.container input:not([type="submit"]):hover, .container textarea:hover {
+    border: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.87);
+}
+.container input:focus-visible, .container textarea:focus-visible {
+    border: none;
+    border-radius: 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.87);
+    outline: none;
+}
+
+.container label {
+    margin-bottom: -1rem;
+    z-index: 100;
+    margin-left: 1rem;
+}
+
+.container label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    letter-spacing: 0.5;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.container input[type="checkbox"] {
+    height: 2rem;
+    margin-right: 1rem;
+    accent-color: black;
+}
+.container label.label-checkbox {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.images img {
+    height: 15rem
+}

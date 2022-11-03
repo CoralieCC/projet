@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #e1d9c8;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1
+}
+body::-webkit-scrollbar-thumb {
+  background: #888
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555
+}
+
+main.main {
+  margin-top: 8.5rem;
+}
+
+
+/**********************************************
+                  BUTTONS
+**********************************************/
+
+.black {
+  background-color: rgb(32, 33, 36);
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem 2.4rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.black:hover {
+  box-shadow: rgb(60 64 67 / 30%) 0px 2px 3px 0px, rgb(60 64 67 / 15%) 0px 6px 10px 4px;
+  background-color: rgb(32, 33, 36);
+}
+
+.white {
+  font-size: 1.4rem;
+  padding: 1rem 2.4rem;
+  border-radius: 2rem;
+  color: rgb(32, 33, 36);
+  font-weight: 700;
+  cursor: pointer;
+}
+.white:hover {
+  background-color: rgb(241, 243, 244);
+}
+
+/*****************************************************
+                      MESSAGES
+*****************************************************/
+
+.error {
+  margin: 2rem 2.4rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 99, 132, 0.2);
+  border-radius: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success {
+  margin: 2rem 2.4rem;
+  padding: 1rem 2rem;
+  background-color: rgba(75, 192, 192, 0.2);
+  border-radius: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.fa-trash, .fa-pen-to-square {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  main.main {
+    margin-top: 120px;
+  }
+}

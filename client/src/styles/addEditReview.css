@@ -1,0 +1,51 @@
+.icon {
+    text-align: right;
+}
+
+.select-rating {
+    width: 20rem
+}
+
+.edit-review form, .add-review form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+.edit-review textarea, .add-review textarea {
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(222, 223, 224);
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    height: 10rem;
+}
+
+.edit-review label, .add-review label {
+    margin-bottom: -1rem;
+    z-index: 100;
+    margin-left: 1rem;
+}
+
+.edit-review label span, .add-review label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    letter-spacing: 0.5;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.edit-review input[type="checkbox"], .add-review input[type="checkbox"]{
+    accent-color: black;
+}
